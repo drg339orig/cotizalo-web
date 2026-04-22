@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de cotizaciones automatizado para empresas. Crea, envía y gestiona tus cotizaciones de manera rápida, moderna y profesional.">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+    
+    <!-- Nav Section -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/LOGOTIPO3/Cotizalo-8.png" alt="Cotízalo Logo" id="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-item">Características</a></li>
+                <li><a href="#how-it-works" class="nav-item">Cómo Funciona</a></li>
+                <li><a href="#pricing" class="nav-item">Precios</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="/login" class="btn btn-secondary btn-nav">Ingresar</a>
+                <a href="/signup" class="btn btn-primary btn-nav">Empezar Gratis</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Dark Theme with Gradient) -->
+    <section class="hero">
+        <!-- Background Design Elements for Hero -->
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="container relative z-10">
+            <div class="hero-content animate-on-scroll fade-in-up">
+                <h1 class="display-title"><?php echo esc_html( get_theme_mod( 'hero_title', 'Bienvenida!' ) ); ?></h1>
+                <p class="hero-subtitle"><?php echo esc_html( get_theme_mod( 'hero_subtitle', 'Tu portal web para cotizaciones profesionales. Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.' ) ); ?></p>
+                <div class="hero-buttons">
+                    <a href="<?php echo esc_url( get_theme_mod( 'hero_btn_link', '/signup' ) ); ?>" class="btn btn-primary btn-lg group">
+                        <?php echo esc_html( get_theme_mod( 'hero_btn_text', 'Crear tu primera cotización' ) ); ?>
+                        <svg class="icon-right" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visualization Element (Mockup) -->
+            <div class="hero-image-wrapper animate-on-scroll fade-in-up delay-200">
+                <div class="glass-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-url">www.cotizalo.net</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-sidebar"></div>
+                        <div class="mockup-content">
+                            <div class="mockup-toolbar"></div>
+                            <div class="mockup-document">
+                                <div class="doc-header">
+                                    <div class="doc-logo"></div>
+                                    <div class="doc-title-lines">
+                                        <div class="line w-100"></div>
+                                        <div class="line w-50"></div>
+                                    </div>
+                                </div>
+                                <div class="doc-items">
+                                    <div class="item-row"><div class="line w-75"></div><div class="line w-25 end"></div></div>
+                                    <div class="item-row"><div class="line w-50"></div><div class="line w-25 end"></div></div>
+                                </div>
+                                <div class="doc-total"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Light Theme) -->
+    <section id="features" class="features-section relative light-section">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll fade-in-up">
+                <h2 class="text-dark"><?php echo esc_html( get_theme_mod( 'features_title', 'Interfaz limpia, segura y profesional.' ) ); ?></h2>
+                <p class="text-dark-muted"><?php echo esc_html( get_theme_mod( 'features_subtitle', 'Diseñado para equipos que requieren rapidez y precisión, eliminando la frialdad de Excel en cada presupuesto.' ) ); ?></p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card animate-on-scroll fade-in-up delay-100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3><?php echo esc_html( get_theme_mod( 'feat_1_title', 'Cotizando hechos y retornos!' ) ); ?></h3>
+                    <p><?php echo esc_html( get_theme_mod( 'feat_1_desc', 'Genera cotizaciones completas reutilizando plantillas dinámicas y tu catálogo de productos guardados.' ) ); ?></p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card animate-on-scroll fade-in-up delay-200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3><?php echo esc_html( get_theme_mod( 'feat_2_title', 'Seriedad Técnica' ) ); ?></h3>
+                    <p><?php echo esc_html( get_theme_mod( 'feat_2_desc', 'Toda tu información de ventas viaja asegurada. Tus datos y los de tus clientes están a salvo en una plataforma estable.' ) ); ?></p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card animate-on-scroll fade-in-up delay-300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3><?php echo esc_html( get_theme_mod( 'feat_3_title', 'Presupuesto Organizado' ) ); ?></h3>
+                    <p><?php echo esc_html( get_theme_mod( 'feat_3_desc', 'Diseño web y móvil integrado que permite llevar el control de todo tu negocio desde la palma de tu mano.' ) ); ?></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA (Dark Theme) -->
+    <section class="cta-section">
+        <div class="container animate-on-scroll scale-in">
+            <div class="cta-box relative overflow-hidden">
+                <div class="cta-bg-glow"></div>
+                <h2 class="display-title-sm" style="margin-bottom: 1rem; color: #ffffff;"><?php echo esc_html( get_theme_mod( 'cta_title', '¿Listo para digitalizar tus ventas?' ) ); ?></h2>
+                <p style="max-width: 600px; margin: 0 auto 2.5rem; color: rgba(255,255,255,0.8);"><?php echo esc_html( get_theme_mod( 'cta_desc', 'Únete a la revolución de las ventas digitales y asombra a tus clientes con propuestas modernas.' ) ); ?></p>
+                <div class="hero-buttons">
+                    <a href="/signup" class="btn btn-primary btn-lg">Comienza tu Prueba Gratuita</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo mb-1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/LOGOTIPO3/Cotizalo-8.png" alt="Cotízalo Logo" style="height: 140px; width: auto; object-fit: contain;" id="footer-logo">
+                    </a>
+                    <p class="text-muted mt-1" style="max-width: 300px;">Transformando la forma en que los equipos de ventas crean, envían y cierran propuestas.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#">Características</a></li>
+                        <li><a href="#">Precios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <?php echo date('Y'); ?> Cotízalo Limitada. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header scroll effect
+            const header = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Logo fallbacks
+            const fallbacks = ['brand-logo', 'footer-logo'];
+            fallbacks.forEach(id => {
+                const img = document.getElementById(id);
+                if(img) {
+                    img.onerror = function() {
+                        this.style.display = 'none';
+                        const parent = this.parentElement;
+                        parent.innerHTML = '<span style="font-weight: 700; font-family: Montserrat; font-size: 1.5rem; color: #fff; display: flex; align-items: center; gap: 8px;"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#123A2C" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>cotizalo.net</span>';
+                    };
+                }
+            });
+
+            // Animate elements on scroll
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+    <?php wp_footer(); ?>
+</body>
+</html>
