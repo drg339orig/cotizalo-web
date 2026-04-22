@@ -16,7 +16,7 @@ add_action( 'after_setup_theme', 'cotizalo_theme_setup' );
  * Enqueue scripts and styles.
  */
 function cotizalo_scripts() {
-    wp_enqueue_style( 'cotizalo-style', get_template_directory_uri() . '/assets/assets/css/styles.css', array(), '1.0.1' );
+    wp_enqueue_style( 'cotizalo-style', get_template_directory_uri() . '/assets/assets/css/styles.css', array(), '1.0.2' );
     wp_enqueue_style( 'google-fonts-montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap', array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'cotizalo_scripts' );

@@ -306,8 +306,8 @@ header.scrolled {
 .hero-image-wrapper {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 2rem;
+  transform: none;
   width: 55%;
   max-width: 800px;
   perspective: 1000px;
