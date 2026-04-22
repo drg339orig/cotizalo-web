@@ -15,7 +15,7 @@
     <header id="navbar">
         <div class="container nav-container">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/LOGOTIPO3/Cotizalo-8.png" alt="Cotízalo Logo" id="brand-logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/assets/logos/LOGOTIPO3/Cotizalo-8.png" alt="Cotízalo Logo" id="brand-logo">
             </a>
             <ul class="nav-links">
                 <li><a href="#features" class="nav-item">Características</a></li>
@@ -154,7 +154,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo mb-1">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/LOGOTIPO3/Cotizalo-8.png" alt="Cotízalo Logo" style="height: 140px; width: auto; object-fit: contain;" id="footer-logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/assets/logos/LOGOTIPO3/Cotizalo-8.png" alt="Cotízalo Logo" style="height: 140px; width: auto; object-fit: contain;" id="footer-logo">
                     </a>
                     <p class="text-muted mt-1" style="max-width: 300px;">Transformando la forma en que los equipos de ventas crean, envían y cierran propuestas.</p>
                 </div>
