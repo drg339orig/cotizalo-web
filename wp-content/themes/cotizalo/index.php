@@ -127,7 +127,7 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                &copy; <?php echo date("Y"); ?> Cotízalo Limitada. Todos los derechos reservados.
+                &copy; <?php echo date("Y"); ?> DrG Labs CO. Todos los derechos reservados.
             </div>
         </div>
     </footer>
