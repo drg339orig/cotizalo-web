@@ -286,7 +286,7 @@ header.scrolled {
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 45%;
   margin-bottom: 4rem;
 }
 
@@ -575,6 +575,9 @@ footer {
    MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 992px) {
+  .hero-content {
+    max-width: 100%;
+  }
   .hero-image-wrapper {
     position: relative;
     right: auto;
