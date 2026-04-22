@@ -34,20 +34,14 @@ function cotizalo_customize_register( $wp_customize ) {
     ));
 
     // Hero Title
-    $wp_customize->add_setting('hero_title', array('default' => 'Bienvenida!'));
+    $wp_customize->add_setting('hero_title', array('default' => 'Tu portal web para cotizaciones profesionales. Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.'));
     $wp_customize->add_control('hero_title', array(
         'label' => __('Título Principal', 'cotizalo'),
         'section' => 'cotizalo_hero_section',
-        'type' => 'text',
-    ));
-
-    // Hero Subtitle
-    $wp_customize->add_setting('hero_subtitle', array('default' => 'Tu portal web para cotizaciones profesionales. Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.'));
-    $wp_customize->add_control('hero_subtitle', array(
-        'label' => __('Subtítulo', 'cotizalo'),
-        'section' => 'cotizalo_hero_section',
         'type' => 'textarea',
     ));
+
+
 
     // Hero Button Text
     $wp_customize->add_setting('hero_btn_text', array('default' => 'Crear tu primera cotización'));

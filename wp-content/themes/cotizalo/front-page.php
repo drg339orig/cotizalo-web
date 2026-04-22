@@ -46,10 +46,7 @@
         <div class="bg-shape bg-shape-1"></div>
         <div class="container relative z-10">
             <div class="hero-content animate-on-scroll fade-in-up">
-                <h1 class="display-title"><?php echo esc_html(get_theme_mod('hero_title', 'Bienvenida!')); ?></h1>
-                <p class="hero-subtitle">
-                    <?php echo esc_html(get_theme_mod('hero_subtitle', 'Tu portal web para cotizaciones profesionales. Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.')); ?>
-                </p>
+                <h1 class="display-title"><?php echo esc_html(get_theme_mod('hero_title', 'Tu portal web para cotizaciones profesionales. Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.')); ?></h1>
                 <div class="hero-buttons">
                     <a href="<?php echo esc_url(get_theme_mod('hero_btn_link', '/signup')); ?>"
                         class="btn btn-primary btn-lg group">
@@ -163,7 +160,8 @@
             <div class="cta-box relative overflow-hidden">
                 <div class="cta-bg-glow"></div>
                 <h2 class="display-title-sm" style="margin-bottom: 1rem; color: #ffffff;">
-                    <?php echo esc_html(get_theme_mod('cta_title', '¿Listo para digitalizar tus ventas?')); ?></h2>
+                    <?php echo esc_html(get_theme_mod('cta_title', '¿Listo para digitalizar tus ventas?')); ?>
+                </h2>
                 <p style="max-width: 600px; margin: 0 auto 2.5rem; color: rgba(255,255,255,0.8);">
                     <?php echo esc_html(get_theme_mod('cta_desc', 'Únete a la revolución de las ventas digitales y asombra a tus clientes con propuestas modernas.')); ?>
                 </p>
