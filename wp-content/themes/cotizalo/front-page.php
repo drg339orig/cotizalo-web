@@ -46,7 +46,10 @@
         <div class="bg-shape bg-shape-1"></div>
         <div class="container relative z-10">
             <div class="hero-content animate-on-scroll fade-in-up">
-                <h1 class="display-title"><?php echo esc_html(get_theme_mod('hero_title', 'Tu portal web para cotizaciones profesionales. Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.')); ?></h1>
+                <h1 class="display-title"><?php echo esc_html(get_theme_mod('hero_title', 'Tu portal web para cotizaciones.')); ?></h1>
+                <p class="hero-subtitle">
+                    <?php echo esc_html(get_theme_mod('hero_subtitle', 'Olvida el Excel. Una identidad técnica, segura y seria, ideal para microempresas.')); ?>
+                </p>
                 <div class="hero-buttons">
                     <a href="<?php echo esc_url(get_theme_mod('hero_btn_link', '/signup')); ?>"
                         class="btn btn-primary btn-lg group">
